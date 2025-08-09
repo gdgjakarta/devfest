@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,9 +25,38 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="z-50 md:sticky top-0 left-0 right-0 bg-zinc-50/70 dark:bg-zinc-950/70 backdrop-blur-sm">
+          <div className="px-8 py-2.5 grid place-content-center">
+            <p className="textcenter text-xs uppercase">
+              Can't join this year?{" "}
+              <span className="text-rose-600">
+                <Link
+                  href="https://www.youtube.com/@GDGJakarta"
+                  target="_blank"
+                >
+                  Watch LIVE
+                </Link>
+              </span>{" "}
+              on YouTube to see the talks & Keynote →
+            </p>
+          </div>
+          <div className="w-full h-[1px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 "></div>
+        </div>
         {children}
       </body>
     </html>
