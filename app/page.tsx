@@ -43,7 +43,7 @@ export default function Home() {
           className="w-full min-h-[80vh] flex flex-col justify-center gap-28"
         >
           <div className="grid gap-6">
-            <h1 className="text-xl md:text-6xl xl:text-8xl font-light text-zinc-950 dark:text-zinc-50">
+            <h1 className="text-2xl md:text-6xl xl:text-8xl font-light text-zinc-950 dark:text-zinc-50">
               Compelling event to <br /> empower, not overwhelm.
             </h1>
             <div className="flex items-center gap-8">
