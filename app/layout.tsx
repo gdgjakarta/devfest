@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, Cascadia_Code } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
 
-const geistSans = Geist({
+const geistSans = Plus_Jakarta_Sans({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
+const geistMono = Cascadia_Code({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
@@ -40,23 +39,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="z-50 md:sticky top-0 left-0 right-0 bg-zinc-50/70 dark:bg-zinc-950/70 backdrop-blur-sm">
-          <div className="px-8 py-2.5 grid place-content-center">
-            <p className="textcenter text-xs uppercase">
-              Can't join this year?{" "}
-              <span className="text-rose-600">
-                <Link
-                  href="https://www.youtube.com/@GDGJakarta"
-                  target="_blank"
-                >
-                  Watch LIVE
-                </Link>
-              </span>{" "}
-              on YouTube to see the talks & Keynote →
-            </p>
-          </div>
-          <div className="w-full h-[1px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 "></div>
-        </div>
         {children}
       </body>
     </html>
