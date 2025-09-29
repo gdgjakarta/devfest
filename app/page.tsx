@@ -60,6 +60,21 @@ export default function Home() {
     },
   ];
 
+  const topics = [
+    "Machine Learning",
+    "Cloud",
+    "Artifical Intelligence",
+    "Web",
+    "Chrome",
+    "Product Design",
+    "Android",
+    "Kotlin Multiplatform",
+    "Flutter",
+    "Firebase",
+    "Data Analyst",
+    "Self-Development",
+  ];
+
   return (
     <div className="min-h-screen">
       <div className="z-50 bg-black border-b border-b-black backdrop:blur-md px-8 sm:px-20 sticky top-0">
@@ -110,15 +125,15 @@ export default function Home() {
         >
           <div className="grid gap-6">
             <h1 className="text-2xl md:text-6xl xl:text-8xl font-light text-white">
-              Compelling event to <br /> empower, not overwhelm.
+              Learn, Connect, and Grow.
             </h1>
             <div className="flex items-center gap-8">
-              <p className="text-white">December 04 - 05, 2025</p>
+              <p className="text-white">Saturday, November 30th 2025</p>
               <div className="h-[1px] w-52 bg-zinc-400 dark:bg-zinc-800"></div>
               <p className="text-white">
-                Ritz-Carlton Hotel,
+                Sasono Utomo & Sasono Langen Budoyo
                 <br />
-                South Jakarta
+                Taman Mini Indonesia Indah
               </p>
             </div>
           </div>
@@ -129,7 +144,7 @@ export default function Home() {
               <br /> share their passion for development across the board.
             </p>
             <div className="flex items-center gap-4">
-              <SecondaryButton destination="#schedule">
+              <SecondaryButton destination="#schedule" className="invert">
                 explore the talks
               </SecondaryButton>
               <PrimaryButton destination="#" className="invert">
@@ -147,6 +162,10 @@ export default function Home() {
               About <br /> DevFest25 Jakarta
             </h1>
             <div className="py-8">
+              <p className="max-w-1/2 text-justify">
+                Explore over 1,000 chapters across 140 countries and meet
+                like-minded developers from all levels and backgrounds.
+              </p>
               <p className="max-w-1/2 text-justify">
                 GDG Jakarta helps developers to learn, connect, create,
                 innovate, build and grow together. The program aspires to be the
@@ -356,9 +375,6 @@ export default function Home() {
               <div className="w-full h-[1px] bg-black"></div>
             </div>
             <div>
-              {/* <h2 className="text-center">
-                We'll get back to you about this soon! Kindly wait.
-              </h2> */}
               <ul className="grid grid-cols-1 md:grid-cols-4 gap-y-16">
                 {speakers.map((speaker, index) => (
                   <li key={index}>
@@ -389,16 +405,54 @@ export default function Home() {
         >
           <div className="grid gap-6">
             <h1 className="text-2xl md:text-6xl xl:text-8xl font-light">
+              Things we will cover at DevFest Jakarta 2025
+            </h1>
+            <div className="flex items-center">
+              <p className="uppercase my-8 w-fit">Topic Coverage</p>
+              <div className="w-full h-[1px] bg-black"></div>
+            </div>
+            <div>
+              <ul className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                {topics.map((topic, index) => (
+                  <li key={index}>
+                    <p className="py-4 px-8 rounded-full bg-white border">
+                      {topic}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section
+          id="speaker"
+          className="w-full min-h-screen flex flex-col justify-center gap-28 py-32 md:py-64 "
+        >
+          <div className="grid gap-6">
+            <h1 className="text-2xl md:text-6xl xl:text-8xl font-light">
               Meet them IRL at DevFest Jakarta 2025
             </h1>
             <div className="flex items-center">
               <p className="uppercase my-8 w-fit">The Venue</p>
               <div className="w-full h-[1px] bg-black"></div>
             </div>
-            <div>
-              <h2 className="text-center">
-                We'll get back to you about this soon! Kindly wait.
-              </h2>
+            <div className="relative">
+              <p className="absolute z-30 right-4 bottom-4 max-w-1/3 text-justify py-8 px-4 rounded-xl border bg-white dark:bg-white text-sm">
+                Sasono Utomo & Sasono Langen Budoyo, or the Golden Snail
+                Theater, is one of the most iconic landmarks inside Taman Mini
+                Indonesia Indah (TMII), Jakarta. The building is uniquely shaped
+                like a giant golden snail, symbolizing a mythical golden snail
+                from Indonesian folklore.
+              </p>
+              <Image
+                src={
+                  "https://res.cloudinary.com/dn8xv9tll/image/upload/v1758879251/Tugu-Api-Pancasila-20x30-1-scaled_jrl3ih.jpg"
+                }
+                alt={"Tugu-Api-Pancasila TMII"}
+                width={1920}
+                height={1080}
+                className="w-full h-96 object-cover grayscale hover:grayscale-0 transition-all duration-300"
+              />
             </div>
           </div>
         </section>
