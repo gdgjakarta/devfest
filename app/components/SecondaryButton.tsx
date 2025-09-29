@@ -4,7 +4,7 @@ import React from "react";
 interface Props {
   destination: string;
   children: React.ReactNode;
-  className: string;
+  className?: string;
 }
 
 const SecondaryButton = ({ destination, children, className }: Props) => {
@@ -12,7 +12,7 @@ const SecondaryButton = ({ destination, children, className }: Props) => {
     <button>
       <Link
         href={destination}
-        className={String.raw`${className} py-2.5 px-4 border border-zinc-950 text-zinc-950 dark:invert relative after:absolute after:z-50 after:block after:right-0 after:bottom-0 w-1 h-1 after:bg-pink-500`}
+        className={String.raw`${className} bg-white block rounded-xl py-2.5 px-4 border border-zinc-950 text-zinc-950 relative after:absolute after:z-50 after:block after:right-0 after:bottom-0 after:bg-pink-500`}
       >
         {children}
       </Link>
