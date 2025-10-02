@@ -12,7 +12,7 @@ const SecondaryButton = ({ destination, children, className }: Props) => {
     <button>
       <Link
         href={destination}
-        className={String.raw`${className} bg-white block rounded-xl py-2.5 px-4 border border-zinc-950 text-zinc-950 relative after:absolute after:z-50 after:block after:right-0 after:bottom-0 after:bg-pink-500`}
+        className={String.raw`${className} bg-white block rounded-full py-2.5 px-4 border border-zinc-800 text-zinc-800 relative after:absolute after:z-50 after:block after:right-0 after:bottom-0 after:bg-pink-500`}
       >
         {children}
       </Link>

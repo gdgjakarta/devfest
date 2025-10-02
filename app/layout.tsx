@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Cascadia_Code } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const geistSans = Plus_Jakarta_Sans({
   variable: "--font-geist-sans",
@@ -39,7 +41,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[url(/bg-pattern.png)] bg-repeat`}
       >
-        {children}
+        <Header />
+        <main className="max-w-7xl mx-auto my-0 overflow-x-clip">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
