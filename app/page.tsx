@@ -344,7 +344,7 @@ export default function Home() {
       </div>
       <section
         id="topics"
-        className="relative w-full min-h-screen flex flex-col justify-center gap-28  py-20 md:py-40 "
+        className="relative w-full min-h-screen flex flex-col justify-center gap-28 py-20 md:py-40 "
       >
         <div className="grid gap-6">
           <h1 className="text-2xl md:text-6xl xl:text-8xl font-light">
