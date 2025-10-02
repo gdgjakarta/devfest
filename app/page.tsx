@@ -318,7 +318,7 @@ export default function Home() {
           <div className="col-span-2 overflow-clip bg-[url(https://res.cloudinary.com/dn8xv9tll/image/upload/v1747357614/bwai-25_ejxdkp.jpg)] bg-center bg-cover grayscale hover:grayscale-0 transition-all duration-300 border border-zinc-800 hover:shadow-[5px_5px_0_rgba(52,168,83,1)] rounded-2xl"></div>
           <div className="relative flex flex-col items-center justify-center py-8 px-10 transition-all">
             <p className="font-semibold uppercase text-2xl tracking-widest rotate-90 md:rotate-0 text-zinc-400">
-              LEARN
+              GROW
             </p>
           </div>
           <div className="hidden md:block min-h-52 w-full col-span-2 bg-[url(https://res.cloudinary.com/dn8xv9tll/image/upload/v1747357614/bwai-25_ejxdkp.jpg)] bg-center bg-cover grayscale hover:grayscale-0 transition-all duration-300 border border-zinc-800 hover:shadow-[5px_5px_0_rgba(249,171,0,1)] rounded-2xl"></div>
