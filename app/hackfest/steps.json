@@ -1,0 +1,66 @@
+{
+  "registration_process": {
+    "title": "How to Register for Hackfest",
+    "description": "Follow these steps to secure your team's spot for the Hackfest event.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Assemble Your Squad",
+        "description": "First, form a team of 3 to 5 members. We only accept group registrations, so find your fellow developers, designers, and problem-solvers.",
+        "notes": [
+          "Pro-Tip: Our selection process prioritizes teams with a balanced mix of skills (e.g., developer, designer, product/business). A diverse team has a higher chance of being selected!"
+        ]
+      },
+      {
+        "step": 2,
+        "title": "Review the Code of Conduct",
+        "description": "Before proceeding, ensure every team member has read and agreed to the DevFest Code of Conduct. A positive and respectful environment is mandatory for all participants.",
+        "notes": [],
+        "action": "Read our Code of Conduct"
+      },
+      {
+        "step": 3,
+        "title": "Complete the Online Registration Form",
+        "description": "Designate one person as the team captain to fill out the registration form. You will need to provide the following information:",
+        "required_info": [
+          "Details for all team members.",
+          "An overview of your team's collective technical skills and roles.",
+          "A brief statement on why your team is interested in tackling the TMII challenges."
+        ],
+        "notes": [
+          "As we expect high interest and have a limit of 30 teams, please be thorough. Your application will be a key part of our curation process if we receive more than 30 submissions."
+        ],
+        "action": "Fill the form"
+      },
+      {
+        "step": 4,
+        "title": "Pay the Commitment Fee",
+        "description": "To finalize your registration, a commitment fee is required.",
+        "fee_details": {
+          "total_amount": 150000,
+          "currency": "IDR",
+          "breakdown": [
+            {
+              "amount": 100000,
+              "type": "Refundable",
+              "description": "This portion will be refunded to your team upon check-in at the event."
+            },
+            {
+              "amount": 50000,
+              "type": "Non-refundable",
+              "description": "This portion covers snacks and food to keep you fueled during the hackathon."
+            }
+          ]
+        },
+        "notes": [],
+        "action": "How to pay?"
+      },
+      {
+        "step": 5,
+        "title": "Await Confirmation",
+        "description": "Once the registration period closes, our team will review all applications. You will receive an official confirmation email informing you if your team has been selected to participate.",
+        "notes": []
+      }
+    ]
+  }
+}
