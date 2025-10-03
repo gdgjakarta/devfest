@@ -1,9 +1,6 @@
 import Image from "next/image";
 import PrimaryButton from "./components/PrimaryButton";
 import SecondaryButton from "./components/SecondaryButton";
-import Header from "./components/Header";
-import Logo from "./components/Logo";
-import Link from "next/link";
 
 export default function Home() {
   const speakers = [
@@ -74,7 +71,7 @@ export default function Home() {
   ];
 
   return (
-    <>
+    <main className="text-zinc-600">
       <section
         id="hero"
         className="relative w-full min-h-[90vh] flex flex-col justify-center gap-20 md:gap-28 bg-cover bg-bottom"
@@ -499,6 +496,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 }
