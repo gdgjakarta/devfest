@@ -46,7 +46,7 @@ const Header = () => {
     >
       <div className="bg-linear-to-r from-zinc-100/0 via-pink-100 to-zinc-100/0 w-full px-8 py-4 grid place-content-center">
         <p className="text-xs text-center">
-          Can't join this year?
+          Can`&apos;`t join this year?
           <span className="text-rose-600 mx-2">
             <Link href="https://www.youtube.com/@GDGJakarta" target="_blank">
               Watch LIVE
@@ -81,7 +81,7 @@ const Header = () => {
             >
               <div className="bg-linear-to-r from-zinc-100/0 via-pink-100 to-zinc-100/0 w-full px-8 py-4 grid place-content-center">
                 <p className="text-xs text-center px-8">
-                  Can't join this year?
+                  Can`&apos;`t join this year?
                   <span className="text-rose-600 mx-2">
                     <Link
                       href="https://www.youtube.com/@GDGJakarta"

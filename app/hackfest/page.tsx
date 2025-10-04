@@ -4,8 +4,15 @@ import PrimaryButton from "../components/PrimaryButton";
 import ListItem from "../components/ListItem";
 import { ArrowBigRightDash } from "lucide-react";
 import Image from "next/image";
-import { title } from "process";
 import SecondaryButton from "../components/SecondaryButton";
+
+type RegistrationStep = {
+  step: number;
+  title: string;
+  description: string;
+  notes: Array<string>;
+  action: string;
+};
 
 async function Hackfest() {
   const registrationSteps = await fs.readFile(
@@ -245,7 +252,7 @@ async function Hackfest() {
           </h3>
           <p>
             Ready to build, innovate, and compete? Follow these steps to secure
-            your team's spot.
+            your team`&apos;`s spot.
           </p>
         </div>
         <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-2 my-8">
@@ -253,8 +260,8 @@ async function Hackfest() {
           <div className="h-full flex">
             <ol className="grid gap-4 md:overflow-y-scroll md:[scrollbar-width:1px] md:h-[600px] w-full md:px-4 scroll-smooth">
               {stepsData.registration_process.steps.map(
-                (step: any, index: number) => (
-                  <li id={`step-${step.step}`} key={step + index}>
+                (step: RegistrationStep, index: number) => (
+                  <li id={`step-${step.step}`} key={index}>
                     <div className="bg-white p-4 border border-zinc-800 rounded-2xl w-full">
                       <div className="flex items-center gap-2">
                         <h4 className="w-10 h-10 aspect-square border border-zinc-800 bg-amber-100 rounded-full grid place-content-center">
