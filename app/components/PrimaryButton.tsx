@@ -26,7 +26,7 @@ const PrimaryButton = ({ destination, children, className }: Props) => {
         href={destination}
         className={String.raw`${className} ${
           mouseHover && "-translate-x-8"
-        } z-50 -translate-x-4 block rounded-full border border-zinc-800 py-2.5 px-4 bg-blue-400 hover:bg-blue-600 text-white relative  hover:shadow-[5px_5px_0_rgba(30,30,30,1)] transition-all`}
+        } z-20 -translate-x-4 block rounded-full border border-zinc-800 py-2.5 px-4 bg-blue-400 hover:bg-blue-600 text-white relative  hover:shadow-[5px_5px_0_rgba(30,30,30,1)] transition-all`}
       >
         {children}
       </Link>

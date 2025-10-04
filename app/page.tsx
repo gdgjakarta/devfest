@@ -220,6 +220,68 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="w-full min-h-[80vh] flex flex-col justify-center gap-20 md:gap-28 py-16">
+        <h1 className="text-2xl md:text-6xl xl:text-8xl font-light">
+          What to expect <br /> at DevFest Jakarta
+        </h1>
+        <div>
+          <ul className="grid grid-cols-1 md:grid-cols-3 grid-rows-3 md:grid-rows-1 gap-4 md:gap-8">
+            <li>
+              <Image
+                src="/devfest/x_bold.svg"
+                width={200}
+                height={200}
+                className="h-14 w-auto py-4"
+                alt="x bold element"
+              />
+              <div className="flex flex-col gap-4">
+                <h4>Cutting-edge Content</h4>
+                <p>
+                  Learn how to build safe, secure, and scalable solutions with
+                  the latest Google technologies. Get insights directly from
+                  Googlers, Google Developer Experts (GDEs), and fellow
+                  community members.
+                </p>
+              </div>
+            </li>
+            <li>
+              <Image
+                src="/devfest/x_bold.svg"
+                width={200}
+                height={200}
+                className="h-14 w-auto py-4"
+                alt="x bold element"
+              />
+              <div className="flex flex-col gap-4">
+                <h4>Community Connections</h4>
+                <p>
+                  Connect with local developers in your area. Join engaging
+                  panel discussions, Q&A sessions, and meetups to share ideas
+                  and discover real-world projects that are shaping the future
+                  of technology.
+                </p>
+              </div>
+            </li>
+            <li>
+              <Image
+                src="/devfest/x_bold.svg"
+                width={200}
+                height={200}
+                className="h-14 w-auto py-4"
+                alt="x bold element"
+              />
+              <div className="flex flex-col gap-4">
+                <h4>Hands-on Learning</h4>
+                <p>
+                  Get hands-on experience through full-day workshops, codelabs,
+                  and debugging sessions. DevFest offers practical learning for
+                  all skill levels.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section
         id="recap"
         className="relative w-full min-h-screen flex flex-col justify-center gap-28  py-20 md:py-40 "
