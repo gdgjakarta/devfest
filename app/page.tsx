@@ -438,7 +438,7 @@ export default function Home() {
       >
         <div className="grid gap-6">
           <h1 className="text-2xl md:text-6xl xl:text-8xl font-light">
-            What you can't missed at DevFest Jakarta 2025
+            What you can&apos;t missed at DevFest Jakarta 2025
           </h1>
           <div className="flex items-center">
             <p className="uppercase my-8 w-fit">Activities Coverage</p>
