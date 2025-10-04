@@ -226,14 +226,16 @@ export default function Home() {
         </h1>
         <div>
           <ul className="grid grid-cols-1 md:grid-cols-3 grid-rows-3 md:grid-rows-1 gap-4 md:gap-8">
-            <li>
-              <Image
-                src="/devfest/x_bold.svg"
-                width={200}
-                height={200}
-                className="h-14 w-auto py-4"
-                alt="x bold element"
-              />
+            <li className="flex flex-col">
+              <div className="h-28 py-4 flex items-center">
+                <Image
+                  src="/devfest/circles-combine_bold.svg"
+                  width={200}
+                  height={200}
+                  className="h-14 w-auto"
+                  alt="x bold element"
+                />
+              </div>
               <div className="flex flex-col gap-4">
                 <h4>Cutting-edge Content</h4>
                 <p>
@@ -244,14 +246,16 @@ export default function Home() {
                 </p>
               </div>
             </li>
-            <li>
-              <Image
-                src="/devfest/x_bold.svg"
-                width={200}
-                height={200}
-                className="h-14 w-auto py-4"
-                alt="x bold element"
-              />
+            <li className="flex flex-col">
+              <div className="h-28 py-4 flex items-center">
+                <Image
+                  src="/devfest/angle-brackets_bold.svg"
+                  width={200}
+                  height={200}
+                  className="h-16 w-auto"
+                  alt="x bold element"
+                />
+              </div>
               <div className="flex flex-col gap-4">
                 <h4>Community Connections</h4>
                 <p>
@@ -262,14 +266,16 @@ export default function Home() {
                 </p>
               </div>
             </li>
-            <li>
-              <Image
-                src="/devfest/x_bold.svg"
-                width={200}
-                height={200}
-                className="h-14 w-auto py-4"
-                alt="x bold element"
-              />
+            <li className="flex flex-col">
+              <div className="h-28 py-4 flex items-center">
+                <Image
+                  src="/devfest/plus-mini_bold.svg"
+                  width={200}
+                  height={200}
+                  className="h-20 w-auto"
+                  alt="x bold element"
+                />
+              </div>
               <div className="flex flex-col gap-4">
                 <h4>Hands-on Learning</h4>
                 <p>
@@ -432,10 +438,10 @@ export default function Home() {
       >
         <div className="grid gap-6">
           <h1 className="text-2xl md:text-6xl xl:text-8xl font-light">
-            Things we will cover at DevFest Jakarta 2025
+            What you can't missed at DevFest Jakarta 2025
           </h1>
           <div className="flex items-center">
-            <p className="uppercase my-8 w-fit">Topic Coverage</p>
+            <p className="uppercase my-8 w-fit">Activities Coverage</p>
             <div className="w-full h-[1px] bg-black"></div>
           </div>
           <div>
