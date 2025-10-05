@@ -12,7 +12,7 @@ const FailedReceipt = () => {
       </div>
       <div className="flex flex-col gap-4 md:gap-8">
         <h1>Oppsyy! </h1>
-        <h3>Your payment can't be processed.</h3>
+        <h3>Your payment can&apos;t be processed.</h3>
         <div>
           <PrimaryButton destination="https://www.instagram.com/gdgjakarta/">
             Contact us for help
