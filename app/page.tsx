@@ -459,7 +459,7 @@ export default function Home() {
       </section>
       <section
         id="speakers"
-        className="w-full min-h-screen flex flex-col justify-center gap-28  py-20 md:py-40 "
+        className="w-full min-h-screen flex flex-col justify-center gap-28 py-20 md:py-40 "
       >
         <div className="grid gap-6">
           <h1 className="text-2xl md:text-6xl xl:text-8xl font-light">
@@ -510,28 +510,44 @@ export default function Home() {
             <div className="w-full h-[1px] bg-black"></div>
           </div>
           <div className="relative">
-            <p className="absolute z-30 right-4 bottom-4 translate-y-2/3 md:max-w-1/3 text-justify py-8 px-4 rounded-xl border bg-white dark:bg-white text-sm">
-              Sasono Utomo & Sasono Langen Budoyo, or the Golden Snail Theater,
-              is one of the most iconic landmarks inside Taman Mini Indonesia
-              Indah (TMII), Jakarta. The building is uniquely shaped like a
-              giant golden snail, symbolizing a mythical golden snail from
-              Indonesian folklore.
-            </p>
-            <Image
-              src={
-                "https://res.cloudinary.com/dn8xv9tll/image/upload/v1758879251/Tugu-Api-Pancasila-20x30-1-scaled_jrl3ih.jpg"
-              }
-              alt={"Tugu-Api-Pancasila TMII"}
-              width={1920}
-              height={1080}
-              className="w-full h-96 object-cover grayscale hover:grayscale-0 transition-all duration-300 rounded-xl border border-zinc-800"
-            />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15862.838326325396!2d106.89122264488518!3d-6.301838165622641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed5e792a011d%3A0xc2706e3045002005!2sSasono%20Langen%20Budoyo%2C%20Ceger%2C%20Cipayung%2C%20East%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1759667667945!5m2!1sen!2sid"
+              width="600"
+              height="450"
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-40 md:h-96 object-cover md:grayscale hover:grayscale-0 transition-all duration-300 rounded-xl border border-zinc-800"
+            ></iframe>
+            <div className="md:absolute z-30 right-4 bottom-4 md:translate-y-2/3 md:max-w-1/2 flex">
+              <div className="flex flex-col items-center justify-center">
+                <div className="block w-10 h-10 aspect-square bg-yellow-100 border border-zinc-800 rounded-full"></div>
+                <div className="block w-10 h-10 aspect-square bg-yellow-100 border border-zinc-800 rounded-full"></div>
+                <SecondaryButton
+                  destination="https://maps.app.goo.gl/PgP1A9Zh7ebeaiek6"
+                  className="bg-yellow-500 w-fit h-fit"
+                >
+                  Open in Maps
+                </SecondaryButton>
+              </div>
+              <p className="text-justify py-8 px-4 rounded-xl border bg-white dark:bg-white text-sm h-fit">
+                <span className="font-semibold">
+                  Sasono Utomo & Sasono Langen Budoyo
+                </span>
+                , or the{" "}
+                <span className="font-semibold">Golden Snail Theater</span>, is
+                one of the most iconic landmarks inside Taman Mini Indonesia
+                Indah (TMII), Jakarta. The building is uniquely shaped like a
+                giant golden snail, symbolizing a mythical golden snail from
+                Indonesian folklore.
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <section>
         <div className="p-8 grid grid-cols-1 md:grid-cols-2 gap-8 bg-blue-100 rounded-xl">
-          <div>
+          <div className="flex flex-col items-center">
             <Image
               src="/devfest/diecut.svg"
               alt="arrow up"
@@ -562,6 +578,30 @@ export default function Home() {
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300 rounded-xl border border-zinc-800 hover:shadow-[5px_5px_0_rgba(66,133,244,1)]"
             />
           </div>
+        </div>
+      </section>
+      <section className="pb-20 p-4">
+        <div className="relative p-8 bg-purple-400 border border-zinc-800 rounded-2xl flex flex-col items-center gap-8">
+          <Image
+            src="/devfest/pattern.png"
+            alt="arrow up"
+            width={200}
+            height={200}
+            className="w-auto h-36 md:h-44 absolute left-0 bottom-0 opacity-30"
+          />
+          <Image
+            src="/devfest/pattern.png"
+            alt="arrow up"
+            width={200}
+            height={200}
+            className="hidden md:block w-auto h-28 md:h-44 absolute right-0 bottom-0 -scale-x-100 opacity-30"
+          />
+          <h2 className="md:max-w-2/3 text-center text-white">
+            Join our Discord server to stay updated!
+          </h2>
+          <PrimaryButton destination="" className="z-50">
+            Join Now
+          </PrimaryButton>
         </div>
       </section>
     </main>
