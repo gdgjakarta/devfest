@@ -10,10 +10,8 @@ const Receipt = () => {
         <DotLottieReact src="success.lottie" loop autoplay />
       </div>
       <div className="flex flex-col gap-4">
-        <h1>Thank you for your purchase!</h1>
-        <p className="text-zinc-600">
-          Your payment has been processed succesfully.
-        </p>
+        <h1>Thank you!</h1>
+        <h3>Your payment has been processed succesfully.</h3>
       </div>
     </section>
   );
