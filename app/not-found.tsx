@@ -14,24 +14,25 @@ export default function NotFound() {
             alt="arrow up"
             width={150}
             height={150}
-            className="hover:-scale-100 transition-all duration-700 grayscale hover:grayscale-0"
+            className="h-20 w-auto md:h-32 hover:-scale-100 transition-all duration-700 grayscale hover:grayscale-0"
           />
           <Image
             src="/devfest/globe_monoline.svg"
             alt="arrow up"
             width={150}
             height={150}
+            className="h-20 w-auto md:h-32"
           />
           <Image
             src="/devfest/4_blue.svg"
             alt="arrow up"
             width={150}
             height={150}
-            className="hover:-scale-100 transition-all duration-700 grayscale hover:grayscale-0"
+            className="h-20 w-auto md:h-32 hover:-scale-100 transition-all duration-700 grayscale hover:grayscale-0"
           />
         </div>
         <h2 className="text-center">It seems you got a little bit lost</h2>
-        <div className="flex items-center justify-center gap-4">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
           <SecondaryButton destination="/hackfest">
             Visit Hackfest
           </SecondaryButton>
