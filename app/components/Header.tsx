@@ -15,7 +15,7 @@ const Header = () => {
     { title: "Speaker", url: "#speakers", isSpecial: false },
     { title: "Schedule", url: "#schedule", isSpecial: false },
     { title: "Venue", url: "#venue" },
-    { title: "Hackfest", url: "/hackfest", isSpecial: true },
+    // { title: "Hackfest", url: "/hackfest", isSpecial: true }, hidden until we determine the date
   ];
 
   useEffect(() => {
@@ -25,9 +25,13 @@ const Header = () => {
       const currentY = window.scrollY;
 
       if (currentY > lastScrollY && currentY > 100) {
-        setisVisible(false);
+        setTimeout(() => {
+          setisVisible(false);
+        }, 500);
       } else {
-        setisVisible(true);
+        setTimeout(() => {
+          setisVisible(true);
+        }, 500);
       }
 
       lastScrollY = currentY;
@@ -42,11 +46,11 @@ const Header = () => {
     <div
       className={String.raw`${
         isVisible ? "translate-y-0" : "-translate-y-full"
-      } bg-white z-50 border-b border-b-zinc-200 backdrop:blur-md px-8 sm:px-20 sticky top-0 transition-all`}
+      } bg-white z-50 border-b border-b-zinc-200 backdrop:blur-md px-8 sm:px-20 sticky top-0 transition-all duration-500`}
     >
       <div className="bg-linear-to-r from-zinc-100/0 via-pink-100 to-zinc-100/0 w-full px-8 py-4 grid place-content-center">
         <p className="text-xs text-center">
-          Can`&apos;`t join this year?
+          Can&apos;t join this year?
           <span className="text-rose-600 mx-2">
             <Link href="https://www.youtube.com/@GDGJakarta" target="_blank">
               Watch LIVE
@@ -81,7 +85,7 @@ const Header = () => {
             >
               <div className="bg-linear-to-r from-zinc-100/0 via-pink-100 to-zinc-100/0 w-full px-8 py-4 grid place-content-center">
                 <p className="text-xs text-center px-8">
-                  Can`&apos;`t join this year?
+                  Can&apos;t join this year?
                   <span className="text-rose-600 mx-2">
                     <Link
                       href="https://www.youtube.com/@GDGJakarta"
