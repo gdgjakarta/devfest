@@ -12,7 +12,7 @@ const geistSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "DevFest Jakarta 2025",
   description:
-    "The world's largest community-driven tech conference, hosted by Google Developer Groups, where developers connect, learn, and build the future with cutting-edge technologies.",
+    "The Indonesia's largest community-driven tech conference, hosted by Google Developer Groups Jakarta, where developers connect, learn, and build the future with cutting-edge technologies.",
 };
 
 export default function RootLayout({
@@ -23,6 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta property="og:type" content="Community/Forum Websites" />
+        <meta property="og:url" content="https://devfest.gdgjakarta.org/" />
+        <meta property="og:logo" content="/logo.svg" />
         <link rel="icon" href="/icons/favicon.ico" sizes="any" />
         <link
           rel="icon"
