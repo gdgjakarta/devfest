@@ -13,7 +13,7 @@ const Header = () => {
   const navigationMenu = [
     { title: "Details", url: "#about", isSpecial: false },
     { title: "Speaker", url: "#speakers", isSpecial: false },
-    { title: "Schedule", url: "#schedule", isSpecial: false },
+    { title: "Topics", url: "#topics", isSpecial: false },
     { title: "Venue", url: "#venue" },
     // { title: "Hackfest", url: "/hackfest", isSpecial: true }, hidden until we determine the date
   ];
