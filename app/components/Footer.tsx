@@ -11,6 +11,10 @@ const Footer = () => {
     { title: "Speaker", url: "#speakers", isSpecial: false },
     { title: "Schedule", url: "#schedule", isSpecial: false },
     { title: "Venue", url: "#venue" },
+    {
+      title: "FAQ",
+      url: "https://gdg.community.dev/forum/gdg-jakarta-538/topic/gdg-jakarta-faq-payment-policy-1003/",
+    },
     // { title: "Hackfest", url: "/hackfest", isSpecial: true }, hidden until we determine the date
   ];
 
@@ -29,7 +33,10 @@ const Footer = () => {
         </ul>
         <ul className="flex items-center gap-8 justify-center">
           <li>
-            <Link href="https://www.instagram.com/gdgjakarta/">
+            <Link
+              href="https://www.instagram.com/gdgjakarta/"
+              className="text-zinc-600 hover:text-sky-500"
+            >
               <Instagram />
             </Link>
           </li>

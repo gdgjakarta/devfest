@@ -15,6 +15,10 @@ const Header = () => {
     { title: "Speaker", url: "#speakers", isSpecial: false },
     { title: "Topics", url: "#topics", isSpecial: false },
     { title: "Venue", url: "#venue" },
+    {
+      title: "FAQ",
+      url: "https://gdg.community.dev/forum/gdg-jakarta-538/topic/gdg-jakarta-faq-payment-policy-1003/",
+    },
     // { title: "Hackfest", url: "/hackfest", isSpecial: true }, hidden until we determine the date
   ];
 
