@@ -470,7 +470,8 @@ export default function Home() {
             <div className="w-full h-[1px] bg-black"></div>
           </div>
           <div>
-            <ul className="grid grid-cols-1 md:grid-cols-4 gap-y-16 gap-x-4">
+            <h2>Will be announced soon!</h2>
+            {/* <ul className="grid grid-cols-1 md:grid-cols-4 gap-y-16 gap-x-4">
               {speakers.map((speaker, index) => (
                 <li key={index}>
                   <div>
@@ -493,7 +494,7 @@ export default function Home() {
                   </div>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </div>
         </div>
       </section>
