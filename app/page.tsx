@@ -91,7 +91,7 @@ export default function Home() {
             height={200}
           />
           <h1 className="text-2xl md:text-6xl xl:text-8xl font-light">
-            Learn, Connect,
+            Connect, Learn,
             <br className="block md:hidden" /> and Grow.
           </h1>
           <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
@@ -341,13 +341,13 @@ export default function Home() {
           </div>
         </div>
         <div className="grid gap-4 grid-cols-3 md:grid-cols-6 grid-rows-3">
-          <div className="min-h-52 w-full col-span-2 overflow-clip bg-[url(https://res.cloudinary.com/dn8xv9tll/image/upload/v1747357614/bwai-25_ejxdkp.jpg)] bg-center bg-cover grayscale hover:grayscale-0 transition-all duration-300 border border-zinc-800 hover:shadow-[5px_5px_0_rgba(234,67,53,1)] rounded-2xl"></div>
+          <div className="min-h-52 w-full col-span-2 overflow-clip bg-[url(https://assets.gdgjakarta.org/devfest/devfest-24-main.png)] bg-center bg-cover grayscale hover:grayscale-0 transition-all duration-300 border border-zinc-800 hover:shadow-[5px_5px_0_rgba(234,67,53,1)] rounded-2xl"></div>
           <div className="relative flex flex-col items-center justify-center py-8 px-10 rounded-2xl transition-all w-full">
             <p className="font-semibold uppercase text-2xl text-zinc-400 tracking-widest rotate-90 md:rotate-0">
-              LEARN
+              CONNECT
             </p>
           </div>
-          <div className="hidden md:block min-h-52 w-full col-span-2 bg-[url(https://res.cloudinary.com/dn8xv9tll/image/upload/v1747357614/bwai-25_ejxdkp.jpg)] bg-center bg-cover grayscale hover:grayscale-0 transition-all duration-300 border border-zinc-800 hover:shadow-[5px_5px_0_rgba(52,168,83,1)] rounded-2xl"></div>
+          <div className="hidden md:block min-h-52 w-full col-span-2 bg-[url(https://assets.gdgjakarta.org/devfest/devfest-24-networking.png)] bg-center bg-cover grayscale hover:grayscale-0 transition-all duration-300 border border-zinc-800 hover:shadow-[5px_5px_0_rgba(52,168,83,1)] rounded-2xl"></div>
           <div className="hidden md:grid place-content-center p-8">
             <Image
               src="/devfest/globe_monoline.svg"
@@ -376,17 +376,19 @@ export default function Home() {
           ></iframe>
           <div className="relative flex flex-col items-center justify-center py-8 px-10 transition-all">
             <p className="font-semibold uppercase text-2xl tracking-widest rotate-90 md:rotate-0 text-zinc-400">
-              CONNECT
+              LEARN
             </p>
           </div>
-          <div className="min-h-52 w-full col-span-2 bg-[url(https://res.cloudinary.com/dn8xv9tll/image/upload/v1747357614/bwai-25_ejxdkp.jpg)] bg-center bg-cover grayscale hover:grayscale-0 transition-all duration-300 border border-zinc-800 hover:shadow-[5px_5px_0_rgba(66,133,244,1)] rounded-2xl"></div>
-          <div className="col-span-2 overflow-clip bg-[url(https://res.cloudinary.com/dn8xv9tll/image/upload/v1747357614/bwai-25_ejxdkp.jpg)] bg-center bg-cover grayscale hover:grayscale-0 transition-all duration-300 border border-zinc-800 hover:shadow-[5px_5px_0_rgba(52,168,83,1)] rounded-2xl"></div>
+          <div className="min-h-52 w-full col-span-2 bg-[url(https://assets.gdgjakarta.org/devfest/devfest-24-qna-attendee.png)] bg-center bg-cover grayscale hover:grayscale-0 transition-all duration-300 border border-zinc-800 hover:shadow-[5px_5px_0_rgba(66,133,244,1)] rounded-2xl">
+            ini
+          </div>
+          <div className="col-span-2 overflow-clip bg-[url(https://assets.gdgjakarta.org/devfest/devfest-24-qna-speaker.png)] bg-center bg-cover grayscale hover:grayscale-0 transition-all duration-300 border border-zinc-800 hover:shadow-[5px_5px_0_rgba(52,168,83,1)] rounded-2xl"></div>
           <div className="relative flex flex-col items-center justify-center py-8 px-10 transition-all">
             <p className="font-semibold uppercase text-2xl tracking-widest rotate-90 md:rotate-0 text-zinc-400">
               GROW
             </p>
           </div>
-          <div className="hidden md:block min-h-52 w-full col-span-2 bg-[url(https://res.cloudinary.com/dn8xv9tll/image/upload/v1747357614/bwai-25_ejxdkp.jpg)] bg-center bg-cover grayscale hover:grayscale-0 transition-all duration-300 border border-zinc-800 hover:shadow-[5px_5px_0_rgba(249,171,0,1)] rounded-2xl"></div>
+          <div className="hidden md:block min-h-52 w-full col-span-2 bg-[url(https://assets.gdgjakarta.org/devfest/devfest-24-workshop.png)] bg-center bg-cover grayscale hover:grayscale-0 transition-all duration-300 border border-zinc-800 hover:shadow-[5px_5px_0_rgba(249,171,0,1)] rounded-2xl"></div>
           <div className="hidden md:grid place-content-center p-8">
             <Image
               src="/devfest/asterisk_monoline.svg"
