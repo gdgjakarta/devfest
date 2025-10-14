@@ -1,7 +1,5 @@
 import React from "react";
-import PrimaryButton from "./PrimaryButton";
 import Logo from "./Logo";
-import { url } from "inspector";
 import Link from "next/link";
 import { Facebook, Instagram, Youtube } from "lucide-react";
 

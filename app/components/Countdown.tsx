@@ -39,7 +39,7 @@ const Countdown = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [calculateTimeLeft]);
 
   const timeUnits = [
     { label: "Days", value: timeLeft.days },
@@ -55,7 +55,7 @@ const Countdown = () => {
           <h2 className="w-5/6 md:w-fit p-4 rounded-xl border border-zinc-800 bg-sky-200 relative before:absolute before:w-7 before:h-full before:border before:border-zinc-800 before:-left-7 before:top-0 before:rounded-xl before:bg-sky-400 hover:before:h-2/3 before:transition-all after:absolute after:w-7 after:h-full after:border after:border-zinc-800 after:-right-7 after:bottom-0 after:rounded-xl after:bg-sky-400 hover:after:h-2/3 after:transition-all hover:px-8 transition-all">
             The biggest tech community & event in Jakarta
           </h2>
-          <h3>We're almost ready!</h3>
+          <h3>We&apos;re almost ready!</h3>
           <p>November 30, 2025</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
