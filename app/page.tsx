@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import PrimaryButton from "./components/PrimaryButton";
 import SecondaryButton from "./components/SecondaryButton";
+import Countdown from "./components/Countdown";
 
 export default function Home() {
   const speakers = [
@@ -119,6 +122,9 @@ export default function Home() {
             </PrimaryButton>
           </div>
         </div>
+      </section>
+      <section>
+        <Countdown />
       </section>
       <section
         id="about"
