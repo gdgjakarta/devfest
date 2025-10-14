@@ -64,12 +64,12 @@ const Header = () => {
         </p>
       </div>
       <header className="flex justify-between items-center gap-10 pt-8 pb-4">
-        <div className="items-center gap-10 flex">
+        <div className="items-center gap-2 flex">
           <Logo />
           <nav>
             <ul
               id="desktop_navigation"
-              className="hidden md:flex flex-row justify-between gap-2 items-center"
+              className="hidden md:flex flex-row justify-between items-center"
             >
               {navigationMenu.map((menu, index) => (
                 <li key={index}>
