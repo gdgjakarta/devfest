@@ -77,7 +77,9 @@ const Countdown = () => {
           ))}
         </div>
         <div className="w-full p-4 md:p-8 grid place-content-center">
-          <PrimaryButton destination="#"> Secure your seat</PrimaryButton>
+          <PrimaryButton destination="https://gdgjakarta.org/devfest-25-register">
+            Secure your seat
+          </PrimaryButton>
         </div>
       </div>
     </div>

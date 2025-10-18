@@ -117,7 +117,10 @@ export default function Home() {
             <SecondaryButton destination="#topics" className="w-full">
               explore the talks
             </SecondaryButton>
-            <PrimaryButton destination="#" className="w-full">
+            <PrimaryButton
+              destination="https://gdgjakarta.org/devfest-25-register"
+              className="w-full"
+            >
               secure your seat
             </PrimaryButton>
           </div>
@@ -570,7 +573,10 @@ export default function Home() {
                   Attend DevFest 25 Jakarta and go home with new knowledge &
                   opportunity!
                 </p>
-                <PrimaryButton destination="#" className="w-fit">
+                <PrimaryButton
+                  destination="https://gdgjakarta.org/devfest-25-register"
+                  className="w-fit"
+                >
                   Secure your Seat
                 </PrimaryButton>
               </div>

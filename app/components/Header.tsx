@@ -136,7 +136,10 @@ const Header = () => {
                   onClick={() => setIsNavOpened(false)}
                   className="flex items-center justify-centercenter outline py-2.5 px-4 bg-linear-to-r from-blue-600 to-rose-400 text-white rounded-full m-2"
                 >
-                  <Link href="#" className="w-full text-center">
+                  <Link
+                    href="https://gdgjakarta.org/devfest-25-register"
+                    className="w-full text-center"
+                  >
                     Secure your seat
                   </Link>
                 </li>
@@ -145,7 +148,9 @@ const Header = () => {
           </nav>
         </div>
         <div className="hidden md:block">
-          <PrimaryButton destination="#">Secure your seat</PrimaryButton>
+          <PrimaryButton destination="https://gdgjakarta.org/devfest-25-register">
+            Secure your seat
+          </PrimaryButton>
         </div>
         <button
           className="block md:hidden"
