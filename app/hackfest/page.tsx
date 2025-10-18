@@ -5,6 +5,7 @@ import ListItem from "../components/ListItem";
 import { ArrowBigRightDash } from "lucide-react";
 import Image from "next/image";
 import SecondaryButton from "../components/SecondaryButton";
+import InstagramInvitation from "../components/InstagramInvitation";
 
 type RegistrationStep = {
   step: number;
@@ -285,30 +286,7 @@ async function Hackfest() {
           </div>
         </div>
       </section>
-      <section className="pb-20 p-4">
-        <div className="relative p-8 bg-purple-400 border border-zinc-800 rounded-2xl flex flex-col items-center gap-8">
-          <Image
-            src="/devfest/pattern.png"
-            alt="arrow up"
-            width={200}
-            height={200}
-            className="w-auto h-36 md:h-44 absolute left-0 bottom-0 opacity-30"
-          />
-          <Image
-            src="/devfest/pattern.png"
-            alt="arrow up"
-            width={200}
-            height={200}
-            className="hidden md:block w-auto h-28 md:h-44 absolute right-0 bottom-0 -scale-x-100 opacity-30"
-          />
-          <h2 className="md:max-w-2/3 text-center text-white">
-            Join our Discord server to stay updated!
-          </h2>
-          <PrimaryButton destination="" className="z-50">
-            Join Now
-          </PrimaryButton>
-        </div>
-      </section>
+      <InstagramInvitation />
     </main>
   );
 }

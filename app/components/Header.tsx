@@ -50,7 +50,7 @@ const Header = () => {
     <div
       className={String.raw`${
         isVisible ? "translate-y-0" : "-translate-y-full"
-      } bg-white z-50 border-b border-b-zinc-200 backdrop:blur-md px-8 sm:px-20 sticky top-0 transition-all duration-500`}
+      } bg-white z-[100000] border-b border-b-zinc-200 backdrop:blur-md px-8 sm:px-20 sticky top-0 transition-all duration-500`}
     >
       <div className="bg-linear-to-r from-zinc-100/0 via-pink-100 to-zinc-100/0 w-full px-8 py-4 grid place-content-center">
         <p className="text-xs text-center">
