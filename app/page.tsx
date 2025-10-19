@@ -522,39 +522,16 @@ export default function Home() {
             <p className="uppercase my-8 w-fit">The Venue</p>
             <div className="w-full h-[1px] bg-black"></div>
           </div>
-          <div className="relative">
+          <div>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15862.838326325396!2d106.89122264488518!3d-6.301838165622641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed5e792a011d%3A0xc2706e3045002005!2sSasono%20Langen%20Budoyo%2C%20Ceger%2C%20Cipayung%2C%20East%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1759667667945!5m2!1sen!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5938101939328!2d106.8195910761747!3d-6.185078893802441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5edb5cb5de3%3A0x5e2eb668692ec18b!2sBRIN%20(Badan%20Riset%20dan%20Inovasi%20Nasional%2FNational%20Research%20and%20Innovation%20Agency)!5e0!3m2!1sen!2sid!4v1760887376128!5m2!1sen!2sid"
               width="600"
               height="450"
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="w-full h-40 md:h-96 object-cover md:grayscale hover:grayscale-0 transition-all duration-300 rounded-xl border border-zinc-800"
+              className="w-full h-80 md:h-96 object-cover md:grayscale hover:grayscale-0 transition-all duration-300 rounded-xl border border-zinc-800"
             ></iframe>
-            <div className="md:absolute z-30 right-4 bottom-4 md:translate-y-2/3 md:max-w-1/2 flex">
-              <div className="flex flex-col items-center justify-center">
-                <div className="block w-10 h-10 aspect-square bg-yellow-100 border border-zinc-800 rounded-full"></div>
-                <div className="block w-10 h-10 aspect-square bg-yellow-100 border border-zinc-800 rounded-full"></div>
-                <SecondaryButton
-                  destination="https://maps.app.goo.gl/PgP1A9Zh7ebeaiek6"
-                  className="bg-yellow-500 w-fit h-fit"
-                >
-                  Open in Maps
-                </SecondaryButton>
-              </div>
-              <p className="text-justify py-8 px-4 rounded-xl border bg-white dark:bg-white text-sm h-fit">
-                <span className="font-semibold">
-                  Sasono Utomo & Sasono Langen Budoyo
-                </span>
-                , or the{" "}
-                <span className="font-semibold">Golden Snail Theater</span>, is
-                one of the most iconic landmarks inside Taman Mini Indonesia
-                Indah (TMII), Jakarta. The building is uniquely shaped like a
-                giant golden snail, symbolizing a mythical golden snail from
-                Indonesian folklore.
-              </p>
-            </div>
           </div>
         </div>
       </section>
