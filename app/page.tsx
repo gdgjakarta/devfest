@@ -99,12 +99,12 @@ export default function Home() {
             <br className="block md:hidden" /> and Grow.
           </h1>
           <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
-            <p className=" ">Saturday, November 30th 2025</p>
-            <div className="h-[1px] w-52 bg-zinc-400"></div>
-            <p>
-              Sasono Utomo & Sasono Langen Budoyo
-              <br />
-              Taman Mini Indonesia Indah
+            <p className="px-8 py-2 rounded-full bg-emerald-200 border border-zinc-800 w-fit">
+              November 30, 2025
+            </p>
+            <p className="px-8 py-2 rounded-full border border-zinc-800 w-fit">
+              BRIN Thamrin (Badan Riset dan Inovasi Nasional/National Research
+              and Innovation Agency)
             </p>
           </div>
         </div>
