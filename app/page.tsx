@@ -135,7 +135,7 @@ export default function Home() {
         className="w-full min-h-[80vh] flex flex-col justify-center gap-20 md:gap-28 py-16"
       >
         <h1 className="text-2xl md:text-6xl xl:text-8xl font-light">
-          About <br /> DevFest25 Jakarta
+          About <br /> DevFest Jakarta
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="md:pr-16 flex flex-col gap-4">

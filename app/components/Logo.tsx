@@ -11,7 +11,7 @@ const Logo = ({ className }: Props) => {
     <Link href="/">
       <Image
         src="/devfest/logo_devfest.svg"
-        alt="DevFest25 Jakarta Logo"
+        alt="DevFest Jakarta Logo"
         width={200}
         height={64}
         className={String.raw`${className}`}
